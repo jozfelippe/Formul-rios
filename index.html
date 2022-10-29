@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+
 </head>
 <body>
     
     <form>
-        <h1>Dados pessoais</h1>
+        <h1>Dados pessoais do candidato</h1>
         <fieldset>
             <legend>Cadastro</legend>
             <div class="flexHorizontal">
@@ -33,7 +35,7 @@
 
             <div class="flexHorizontal">
                 <div>
-                    <label for="emailUsuario">Email:</label>
+                    <label for="emailUsuario">E-mail:</label>
                     <input type="email" name="emailUsuario" id="emailUsuario" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="" required>
                 </div>
 
@@ -44,12 +46,12 @@
             </div>
 
             <div>
-                <p class="textoCentralizado">Preferencia de Contato</p>
+                <p class="textoCentralizado">Preferência de Contato</p>
                     
                 <div class="flexCentral">
                     <div>
                         <input type="radio" name="preferenciaContato" id="contatoPorEmail">
-                        <label for="contatoPorEmail" class="labelInline">Email</label>
+                        <label for="contatoPorEmail" class="labelInline">E-mail</label>
                     </div>
                         
                     <div>
@@ -91,7 +93,7 @@
 
                     
                     <select name="estadoUsuario" id="estadoUsuario">
-                        <option value="">-- Selecione seu Estado --</option> 
+                        <option value="">Selecione seu Estado</option> 
                         <option value="acre">AC</option>
                         <option value="alagoas">AL</option>
                         <option value="amazonas">AM</option>
